@@ -1,3 +1,4 @@
+import Nav from '@components/Nav';
 import '@styles/globals.css';
 
 export const metadata = {
@@ -5,7 +6,7 @@ export const metadata = {
   description: 'Discover & Share AI Prompts'
 }
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
@@ -13,8 +14,9 @@ const RootLayout = ({children}) => {
           <div className="gradient" />
         </div>
         <main className="app">
+          <Nav />
           {children}
-         </main>
+        </main>
       </body>
     </html>
   )
